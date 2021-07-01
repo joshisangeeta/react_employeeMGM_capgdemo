@@ -13,13 +13,9 @@ class UserService {
    }
 
    deleteUser(id){
+       console.log("deleting"+USER_API_BASE_URL+`/id`)
     return axios.delete(USER_API_BASE_URL+`/id`)
    }
-
-
-
-
-
 }
 
 export default new UserService()
